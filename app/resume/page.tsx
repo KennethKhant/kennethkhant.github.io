@@ -1,30 +1,36 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Resume",
-  description: "My resume as an embedded PDF with a downloadable copy.",
+  description: "My resume as an image with a downloadable copy.",
 };
 
-// Put your PDF at public/resume/ (e.g., public/resume/myat-khant-resume.pdf)
-const RESUME_URL = "/resume/myat-khant-resume.pdf"; // <- change filename if needed
+const RESUME_PDF = "/resume/kaungkhant-resume.pdf"; // keep your PDF here
+const RESUME_IMG = "/resume/myresume.png"; // your image file
 
 export default function ResumePage() {
   return (
-    <main className="mx-auto max-w-6xl px-6 py-10">
+    <main className="mx-auto max-w-4xl px-6 py-10">
       {/* Header */}
       <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <h1 className="text-xl md:text-xl font-semibold">Kaung Khant – Resume</h1>
-          <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-xs text-zinc-300">PDF</span>
-        </div>
+        <h1 className="text-xl md:text-xl font-semibold">Kaung Khant – Resume</h1>
         <div className="flex items-center gap-2">
           <a
-            href={RESUME_URL}
+            href={RESUME_PDF}
             download
             className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-4 py-2 text-sm text-zinc-100 hover:border-white/30 hover:bg-white/10"
           >
             <DownloadIcon />
             Download PDF
+          </a>
+          <a
+            href={RESUME_IMG}
+            download
+            className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-4 py-2 text-sm text-zinc-100 hover:border-white/30 hover:bg-white/10"
+          >
+            <DownloadIcon />
+            Download Image
           </a>
           <Link
             href="/"
@@ -35,23 +41,16 @@ export default function ResumePage() {
         </div>
       </div>
 
-      {/* PDF container */}
-      <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] shadow-[0_8px_40px_rgba(0,0,0,0.35)]">
-        {/* Inline PDF preview */}
-        <object
-          data={`${RESUME_URL}#view=FitH`}
-          type="application/pdf"
-          className="h-[calc(100vh-220px)] w-full"
-        >
-          {/* Fallback if browser can't render PDFs inline */}
-          <div className="p-6 text-sm text-zinc-300">
-            <p className="mb-2">Your browser can&amp;apos;t display the PDF inline.</p>
-            <p>
-              <a href={RESUME_URL} className="underline">Open the PDF</a> or use the
-              <span className="mx-1 rounded bg-white/5 px-1.5 py-0.5">Download</span> button above.
-            </p>
-          </div>
-        </object>
+      {/* Resume as image */}
+      <div className="overflow-hidden rounded-xl border border-white/10 bg-white">
+        <Image
+          src={RESUME_IMG}
+          alt="Kaung Khant Resume"
+          width={1408}   // match your image width
+          height={1820}  // match your image height
+          className="w-full h-auto"
+          priority
+        />
       </div>
     </main>
   );
