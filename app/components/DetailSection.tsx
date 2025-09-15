@@ -1,4 +1,3 @@
-// app/components/DetailSection.tsx
 import Image from "next/image";
 import { ReactNode } from "react";
 
@@ -7,8 +6,10 @@ type DetailSectionProps = {
   copy?: ReactNode;
   imgSrc?: string;
   imgAlt?: string;
-  reverse?: boolean; // when true: image on the right, text on the left
-  children?: ReactNode; // allow custom content like videos, lists, etc.
+  reverse?: boolean;          // when true: image on the right, text on the left
+  children?: ReactNode;       // custom media (e.g., <video/iframe>) if no imgSrc
+  imgClassName?: string;      // e.g., "object-bottom" or "object-[50%_80%]"
+  mediaAspectClass?: string;  // e.g., "aspect-[3/2]" | "aspect-[4/3]" | defaults to 16:10
 };
 
 export default function DetailSection({
@@ -18,6 +19,8 @@ export default function DetailSection({
   imgAlt = "",
   reverse = false,
   children,
+  imgClassName = "",
+  mediaAspectClass = "aspect-[16/10]",
 }: DetailSectionProps) {
   return (
     <section
@@ -26,11 +29,19 @@ export default function DetailSection({
       }`}
     >
       {/* Image (or custom media) */}
-      <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02]">
+      <div
+        className={`relative w-full overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] ${mediaAspectClass}`}
+      >
         {imgSrc ? (
-          <Image src={imgSrc} alt={imgAlt} fill className="object-cover" />
+          <Image
+            src={imgSrc}
+            alt={imgAlt}
+            fill
+            className={`object-cover ${imgClassName}`}
+            sizes="(max-width: 768px) 100vw, 50vw"
+            priority
+          />
         ) : (
-          // If no imgSrc, allow custom media (e.g., video) via children
           <div className="absolute inset-0">{children}</div>
         )}
       </div>
@@ -38,9 +49,11 @@ export default function DetailSection({
       {/* Text */}
       <div>
         {title && <h3 className="text-xl font-semibold">{title}</h3>}
-        {copy && <div className="mt-3 text-zinc-300 leading-relaxed space-y-3">{copy}</div>}
-        {/* If you want extra children below copy (e.g., bullets) */}
-        {!imgSrc && children ? <div className="mt-3" /> : null}
+        {copy && (
+          <div className="mt-3 text-zinc-300 leading-relaxed space-y-3">
+            {copy}
+          </div>
+        )}
       </div>
     </section>
   );

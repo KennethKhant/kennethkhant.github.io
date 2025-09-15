@@ -26,7 +26,7 @@ export const capabilities: Capability[] = [
   {
     title: "PID Line Follower",
     slug: "pid-line-follower",
-    img: "/placeholder/linefollow.jpg",
+    img: "/linefollow/win.jpg",
     copy:
       "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
     tags: ["Control", "Embedded"],
