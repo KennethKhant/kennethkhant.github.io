@@ -33,7 +33,7 @@ export default function Speaker() {
       <div className="mt-8 grid grid-cols-5 gap-4">
         <div className="relative col-span-3 h-[20rem] overflow-hidden rounded-none border border-white/10">
           <Image
-            src="/Amplifier/amplifier schematic.jpg"
+            src="/amplifier/amplifier-schematic.jpg"
             alt="Amplifier schematic"
             fill
             className="object-cover object-[58%_37%]"
@@ -43,7 +43,7 @@ export default function Speaker() {
         </div>
         <div className="relative col-span-2 h-[20rem] overflow-hidden rounded-none border border-white/10">
           <Image
-            src="/Amplifier/circuitassemble.jpg"
+            src="/amplifier/circuitassemble.jpg"
             alt="Assembled amplifier"
             width={590}
             height={480}
@@ -96,7 +96,7 @@ export default function Speaker() {
       <div className="mt-8 grid gap-4 sm:grid-cols-5">
         <div className="relative sm:col-span-2 h-[20rem] overflow-hidden rounded-none border border-white/10">
           <Image
-            src="/Amplifier/test1.jpg"
+            src="/amplifier/test1.jpg"
             alt="Amplifier test setup"
             width={590}
             height={480}
@@ -107,7 +107,7 @@ export default function Speaker() {
 
         <div className="relative sm:col-span-3 h-[20rem] overflow-hidden rounded-none border border-white/10">
           <Image
-            src="/Amplifier/waveform.jpg"
+            src="/amplifier/waveform.jpg"
             alt="Oscilloscope waveform"
             fill
             className="object-cover object-[50%_50%]"
@@ -130,7 +130,7 @@ export default function Speaker() {
       <div className="mt-16">
         <DetailSection
           title="Circuit Assembly"
-          imgSrc="/Amplifier/test2.jpg"
+          imgSrc="/amplifier/test2.jpg"
           imgAlt="test2_assembly"
           imgClassName="object-[50%_50%]"
           mediaAspectClass="aspect-[4/3]" 
@@ -151,7 +151,7 @@ export default function Speaker() {
         <DetailSection
           reverse
           title="Chassis Design"
-          imgSrc="/Amplifier/body.jpg"
+          imgSrc="/amplifier/body.jpg"
           imgAlt="Chassis Design"
           imgClassName="object-[50%_50%]"
           mediaAspectClass="aspect-[11/10]"  

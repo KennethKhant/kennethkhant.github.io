@@ -29,7 +29,7 @@ export default function CoinFlip() {
       {/* Big hero image */}
       <div className="mt-8 relative w-full aspect-[1/.5] overflow-hidden border border-white/10">
         <Image
-          src="/CoinFlip/coinflip.jpg"
+          src="/coinflip/coinflip.jpg"
           alt="Coin Flip"
           fill
           className="object-cover object-[50%_52%]"
@@ -49,7 +49,7 @@ export default function CoinFlip() {
       <div className="mt-16">
         <DetailSection
           title="Circuit Assembly"
-          imgSrc="/CoinFlip/coinflipfinal.jpg"
+          imgSrc="/coinflip/coinflipfinal.jpg"
           imgAlt="test2_assembly"
           imgClassName="object-[50%_60%]"
           mediaAspectClass="aspect-[4/3]"
