@@ -38,6 +38,7 @@ export default function CapabilitiesPage() {
                 fill
                 sizes="(max-width:768px) 100vw, (max-width:1024px) 50vw, 33vw"
                 className="object-cover transition-transform duration-300 ease-out group-hover:scale-105 group-hover:brightness-110"
+                style={{ objectPosition: p.objectPosition ?? "center" }}
                 priority={false}
               />
               {/* subtle gradient overlay */}

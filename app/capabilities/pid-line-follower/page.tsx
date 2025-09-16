@@ -43,7 +43,7 @@ export default function PID_Line_Robot_Page() {
 {/* Split hero: robot (40%) + prototype (60%) */}
 <div className="mt-8 grid grid-cols-5 gap-4">
   {/* LEFT: robot */}
-  <div className="relative col-span-2 h-[23rem] overflow-hidden rectangle-2xl border border-white/10">
+  <div className="relative col-span-2 h-[23rem] overflow-hidden rounded-none border border-white/10">
     <Image
       src="/linefollow/win.jpg"
       alt="PID Line Robot"
@@ -55,7 +55,7 @@ export default function PID_Line_Robot_Page() {
   </div>
 
   {/* RIGHT: prototype poster */}
-  <div className="relative col-span-3 h-[23rem] overflow-hidden rectangle-2xl border border-white/10">
+  <div className="relative col-span-3 h-[23rem] overflow-hidden rounded-none border border-white/10">
     <Image
       src="/linefollow/prototype.jpg"
       alt="Prototype poster"
@@ -89,7 +89,7 @@ export default function PID_Line_Robot_Page() {
             <li>Microcontroller: Arduino</li>
             <li>Motor Driver: L298N</li>
             <li>Motors: DC gear motors</li>
-            <li>Sensor: Photoresistor</li>
+            <li>Sensor & Control: Photoresistor, Potentiometer</li>
             <li>Battery: Li-ion AA , 9V</li>
           </ul>
         </aside>
@@ -191,7 +191,7 @@ export default function PID_Line_Robot_Page() {
 <section className="mt-12 grid gap-6 md:grid-cols-2">
   {/* LEFT: video (same size as before) */}
   <div className="flex justify-center">
-    <div className="relative w-full max-w-sm overflow-hidden rectangle-xl border border-white/10">
+    <div className="relative w-full max-w-sm overflow-hidden rounded-none border border-white/10">
       <iframe
         className="w-full aspect-[9/16]"
         src="https://www.youtube.com/embed/T0vcUonHkV0?rel=0"
@@ -206,13 +206,13 @@ export default function PID_Line_Robot_Page() {
 
   {/* RIGHT: images stretch to match video height */}
   <div className="grid grid-rows-3 gap-3 h-full">
-    <div className="relative w-full overflow-hidden rectangle-xl border border-white/10">
+    <div className="relative w-full overflow-hidden rounded-none border border-white/10">
       <Image src="/linefollow/fixingwheel.jpg" alt="Demo 1" fill className="object-cover object-[50%_70%]" />
     </div>
-    <div className="relative w-full overflow-hidden rectangle-xl border border-white/10">
+    <div className="relative w-full overflow-hidden rounded-none border border-white/10">
       <Image src="/linefollow/photoresistor.jpg" alt="Demo 2" fill className="object-cover object-[50%_20%]" />
     </div>
-    <div className="relative w-full overflow-hidden rectangle-xl border border-white/10">
+    <div className="relative w-full overflow-hidden rounded-none border border-white/10">
       <Image src="/linefollow/teamwinning.jpg" alt="Demo 3" fill className="object-cover object-[50%_60%]" />
     </div>
   </div>

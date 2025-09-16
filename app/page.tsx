@@ -89,68 +89,6 @@ export default function HomePage() {
 
       </section>
 
-
-      {/* ================= SELECTED WORK ================= */}
-      <section className="mt-14">
-        <div className="flex items-end justify-between">
-          <h2 className="text-xl md:text-2xl font-semibold">Capabilities</h2>
-          <Link href="/capabilities" className="text-m text-zinc-400 hover:text-zinc-200">
-  See all →
-</Link>
-        </div>
-
-        {/* 👇 Update project list here */}
-<div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-  {[
-    {
-      title: "Hovermap Robot",
-      img: "/placeholder/Hovermap_cover.jpg",
-      copy: "Compact inspection robot designed to navigate confined spaces like culverts and bridges, using cameras and sensors to map environments safely and efficiently.",
-      href: "/capabilities/hovermap-robot",   // ✅ updated
-    },
-    {
-      title: "Aether-Morpheus System",
-      img: "/placeholder/NASA_cover.jpg",
-      copy: "Two systems that enhance astronaut safety during post-EVA operations by combining environmental monitoring and health assessment capabilities.",
-      href: "/capabilities/aether-morpheus",  // ✅ updated
-    },
-    {
-      title: "PID Line Follower",
-      img: "/placeholder/PID_cover.jpg",
-      copy: "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
-      href: "/capabilities/pid-line-follower", // ✅ updated
-    },
-  ].map((p) => (
-    <Link
-      key={p.title}
-      href={p.href}
-      className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] transition"
-    >
-      {/* 👇 Image stays clean */}
-      <div className="relative h-64 w-full">
-        <Image
-          src={p.img}
-          alt={p.title}
-          fill
-          className="object-cover opacity-90 group-hover:opacity-100 transition"
-        />
-      </div>
-      {/* 👇 Hidden text panel (shows only on hover) */}
-      <div className="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 bg-black/80 text-white p-4 transition-transform duration-300">
-        <h3 className="font-medium">{p.title}</h3>
-        <p className="mt-2 text-sm text-zinc-300">{p.copy}</p>
-        <span className="mt-2 block text-xs text-zinc-400 group-hover:text-zinc-200 transition">
-          Learn more →
-        </span>
-      </div>
-    </Link>
-  ))}
-</div>
-
-
-
-      </section>
-
       {/* ================= EXPERTISE ================= */}
       <section
         id="systems"
@@ -178,6 +116,69 @@ export default function HomePage() {
         </div>
       </section>
 
+  {/* ================= SELECTED WORK ================= */}
+      <section className="mt-14">
+        <div className="flex items-end justify-between">
+          <h2 className="text-xl md:text-2xl font-semibold">Capabilities</h2>
+          <Link href="/capabilities" className="text-m text-zinc-400 hover:text-zinc-200">
+      See all →
+  </Link>
+        </div>
+
+        {/* Project List*/}
+<div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+  {[
+    {
+      title: "Hovermap Robot",
+      img: "/placeholder/Hovermap_cover.jpg",
+      copy: "Compact inspection robot designed to navigate confined spaces like culverts and bridges, using cameras and sensors to map environments safely and efficiently.",
+      href: "/capabilities/hovermap-robot",   
+    },
+    {
+      title: "Aether-Morpheus System",
+      img: "/placeholder/NASA_cover.jpg",
+      copy: "Two systems that enhance astronaut safety during post-EVA operations by combining environmental monitoring and health assessment capabilities.",
+      href: "/capabilities/aether-morpheus",  
+    },
+    {
+      title: "PID Line Follower",
+      img: "/placeholder/PID_cover.jpg",
+      copy: "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
+      href: "/capabilities/pid-line-follower", 
+    },
+  ].map((p) => (
+    <Link
+      key={p.title}
+      href={p.href}
+      className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] transition"
+    >
+      {/*  Image  */}
+      <div className="relative h-64 w-full">
+        <Image
+          src={p.img}
+          alt={p.title}
+          fill
+          className="object-cover opacity-90 group-hover:opacity-100 transition"
+        />
+      </div>
+      {/* 👇 Hidden text panel (shows only on hover) */}
+      <div className="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 bg-black/80 text-white p-4 transition-transform duration-300">
+        <h3 className="font-medium">{p.title}</h3>
+        <p className="mt-2 text-sm text-zinc-300">{p.copy}</p>
+        <span className="mt-2 block text-xs text-zinc-400 group-hover:text-zinc-200 transition">
+          Learn more →
+        </span>
+      </div>
+    </Link>
+  ))}
+</div>
+
+
+
+      </section>
+
+      
+
       {/* ================= CONTACT ================= */}
        {/* <section
         id="contact"
@@ -203,12 +204,12 @@ export default function HomePage() {
       </section>
          */}
       {/* ================= ABOUT ME LINK ================= */}
-<Link
-  href="/about"
-  className="mt-10 block rounded-2xl border border-white/10 bg-gradient-to-r from-white/[0.04] to-transparent p-6 text-center hover:bg-white/10 transition"
->
-  <span className="text-sm font-semibold">More About Me</span>
-</Link>
+      <Link
+        href="/about"
+        className="mt-10 block rounded-2xl border border-white/10 bg-gradient-to-r from-white/[0.04] to-transparent p-6 text-center hover:bg-white/10 transition"
+      >
+        <span className="text-sm font-semibold">More About Me</span>
+      </Link>
 
 
     </main>
