@@ -22,8 +22,10 @@ export default function Speaker() {
       <header className="space-y-3">
         <h1 className="text-4xl font-bold tracking-tight">Lil Minion</h1>
         <p className="text-zinc-300 max-w-2xl">
-          "Lil Minion" is a simple audio amplifier built around the LM386 chip, designed to boost small input signals and drive an 8Ω speaker with clear output. 
-          The name "Lil Minion" comes from the playful inspiration of the Minion character, reflecting both its compact size and the fun, approachable nature of the build.
+          &quot;Lil Minion&quot; is a simple audio amplifier built around the LM386 chip,
+          designed to boost small input signals and drive an 8Ω speaker with clear output. 
+          The name &quot;Lil Minion&quot; comes from the playful inspiration of the Minion character,
+          reflecting both its compact size and the fun, approachable nature of the build.
         </p>
       </header>
 
@@ -118,11 +120,11 @@ export default function Speaker() {
       <section className="mt-8">
         <h2 className="text-2xl font-semibold mb-3">Signal Analysis</h2>
         <p className="text-zinc-300 max-w-5xl leading-relaxed">
-        The amplifier was tested using a waveform generator and monitored on a digital oscilloscope. 
-        The output showed a clear increase in amplitude compared to the input, confirming that the LM386 can deliver effective low-voltage amplification. 
-        The circuit maintained the signal shape with little distortion, while the coupling and bypass capacitors helped reduce high-frequency noise and kept the DC bias stable.
+          The amplifier was tested using a waveform generator and monitored on a digital oscilloscope. 
+          The output showed a clear increase in amplitude compared to the input, confirming that the LM386 can deliver effective low-voltage amplification. 
+          The circuit maintained the signal shape with little distortion, while the coupling and bypass capacitors helped reduce high-frequency noise and kept the DC bias stable.
         </p>
-        </section>
+      </section>
 
       {/* ✅ Block 1 — image LEFT, text RIGHT */}
       <div className="mt-16">
@@ -166,38 +168,37 @@ export default function Speaker() {
       </div>
 
       {/* Demo split: video left, another right */}
-        <section className="mt-12 grid gap-6 md:grid-cols-2">
+      <section className="mt-12 grid gap-6 md:grid-cols-2">
         {/* LEFT: video */}
         <div className="flex justify-center">
-            <div className="relative w-full max-w-sm overflow-hidden rounded-none border border-white/10">
+          <div className="relative w-full max-w-sm overflow-hidden rounded-none border border-white/10">
             <iframe
-                className="w-full aspect-[9/16]"
-                src="https://youtube.com/embed/LGARpa7rOvY?feature=share"
-                title="Newborn Test"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-                loading="lazy"
+              className="w-full aspect-[9/16]"
+              src="https://youtube.com/embed/LGARpa7rOvY?feature=share"
+              title="Newborn Test"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              loading="lazy"
             />
-            </div>
+          </div>
         </div>
 
         {/* RIGHT: video */}
         <div className="flex justify-center">
-            <div className="relative w-full max-w-sm overflow-hidden rounded-none border border-white/10">
+          <div className="relative w-full max-w-sm overflow-hidden rounded-none border border-white/10">
             <iframe
-                className="w-full aspect-[9/16]"
-                src="https://youtube.com/embed/4kfEo8C5BEQ?feature=share"
-                title="Amplifier Final Version"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-                loading="lazy"
+              className="w-full aspect-[9/16]"
+              src="https://youtube.com/embed/4kfEo8C5BEQ?feature=share"
+              title="Amplifier Final Version"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              loading="lazy"
             />
-            </div>
+          </div>
         </div>
-        </section>
-
+      </section>
     </main>
   );
 }
