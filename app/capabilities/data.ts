@@ -47,11 +47,11 @@ export const capabilities: Capability[] = [
   {
     title: "Triton Robotic",
     slug: "triton_robotic",
-    img: "/placeholder/tritonrobotic.jpg",
+    img: "/tritonrobotic/mainrobot.jpg",
     copy:
       "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
     tags: ["Control", "Embedded"],
-    objectPosition: "center 50%",
+    objectPosition: "center 25%",
   },
   {
     title: "Coin Flip",
