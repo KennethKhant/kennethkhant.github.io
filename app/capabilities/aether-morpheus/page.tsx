@@ -57,10 +57,10 @@ export default function HovermapRobotPage() {
       </section>
 
       {/* Optional video */}
-      {/*
       <section className="mt-12">
         <h2 className="text-2xl font-semibold mb-3">Demo</h2>
         <div className="aspect-video overflow-hidden rounded-xl border border-white/10">
+          {/* Replace with your real video URL */}
           <iframe
             className="h-full w-full"
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -69,7 +69,6 @@ export default function HovermapRobotPage() {
           />
         </div>
       </section>
-      */}
 
       {/* Optional gallery */}
       <section className="mt-12">
