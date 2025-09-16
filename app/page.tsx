@@ -142,7 +142,7 @@ export default function HomePage() {
     },
     {
       title: "PID Line Follower",
-      img: "/placeholder/PID_cover.jpg",
+      img: "/placeholder/coverpid.jpg",
       copy: "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
       href: "/capabilities/pid-line-follower", 
     },
@@ -203,6 +203,7 @@ export default function HomePage() {
         </div>
       </section>
          */}
+
       {/* ================= ABOUT ME LINK ================= */}
       <Link
         href="/about"
