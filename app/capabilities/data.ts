@@ -40,7 +40,7 @@ export const capabilities: Capability[] = [
     slug: "speaker",
     img: "/placeholder/speaker.jpg",
     copy:
-      "\"Lil Minion\" is a simple audio amplifier built around the LM386 chip, designed to boost small input signals and drive an 8Ω speaker with clear output. The name \"Lil Minion\" comes from the playful inspiration of the Minion character, reflecting both its compact size and the fun, approachable nature of the build.",
+      "Lil Minion is a simple audio amplifier built around the LM386 chip, designed to boost small input signals and drive an 8Ω speaker with clear output. The name \"Lil Minion\" comes from the playful inspiration of the Minion character, reflecting both its compact size and the fun, approachable nature of the build.",
     tags: ["Control", "Embedded"],
     objectPosition: "center 50%",
   },
@@ -49,7 +49,7 @@ export const capabilities: Capability[] = [
     slug: "triton_robotic",
     img: "/tritonrobotic/mainrobot.jpg",
     copy:
-      "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
+      "Triton Robotics is a student-led engineering team at UC San Diego that competes in the international RoboMaster robotics competition.",
     tags: ["Control", "Embedded"],
     objectPosition: "center 25%",
   },
@@ -58,32 +58,32 @@ export const capabilities: Capability[] = [
     slug: "coinflip",
     img: "/placeholder/coinflippro.jpg",
     copy:
-      "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
+      "An electronic coin-flipping circuit built on a custom PCB. Using a push-button, LEDs, and basic logic components, the board randomly lights up either 'Heads' or 'Tails' to simulate the toss of a coin.",
     tags: ["Control", "Embedded"],
     objectPosition: "center 65%",
   },
   {
     title: "My Little Portfolio",
     slug: "lilportfolio",
-    img: "/placeholder/lilportfolio.jpg",
+    img: "/placeholder/mainmenu.jpg",
     copy:
       "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
     tags: ["Control", "Embedded"],
-    objectPosition: "center 50%",
+    objectPosition: "center 20%",
   },
   {
-    title: "Shoe Miner",
+    title: "Sole Collector",
     slug: "gold_miner",
-    img: "/placeholder/shoeminer.jpg",
+    img: "/placeholder/solecollectormain.jpg",
     copy:
-      "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
+      "Sole Collector is an interactive desktop game developed in C++ with SFML as part of my Advanced C++ coursework.",
     tags: ["Control", "Embedded"],
-    objectPosition: "center 50%",
+    objectPosition: "center 30%",
   },
   {
     title: "Music By ME",
     slug: "musicByMe",
-    img: "/placeholder/music.jpg",
+    img: "/placeholder/musicappmain.jpg",
     copy:
       "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
     tags: ["Control", "Embedded"],

@@ -1,8 +1,8 @@
-// app/capabilities/hovermap-robot/page.tsx
 import Image from "next/image";
 import Link from "next/link";
+import DetailSection from "../../components/DetailSection";
 
-export default function HovermapRobotPage() {
+export default function SoleCollectorPage() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-16">
       <div className="mb-6 flex items-center justify-between">
@@ -15,70 +15,146 @@ export default function HovermapRobotPage() {
       </div>
 
       {/* Title & subhead */}
-      <header className="space-y-3">
-        <h1 className="text-4xl font-bold tracking-tight">Hovermap Robot</h1>
-        <p className="text-zinc-300 max-w-3xl">
-          Compact inspection platform for confined spaces; multi-sensor mapping workflow.
+      <header className="space-y-4">
+        <h1 className="text-4xl font-bold tracking-tight">Sole Collector</h1>
+        
+        <p className="text-zinc-300 max-w-6xl space-y-1">
+          <strong>Sole Collector</strong> is an interactive desktop game developed in 
+          <strong> C++</strong> with <strong>SFML</strong> as part of my Advanced C++ coursework. 
+          Inspired by the classic <em>Gold Miner</em> mechanic, the game challenges players to 
+          reach a target score within a time limit by collecting high-value objects while avoiding obstacles.
         </p>
+
+        <p className="text-zinc-300 max-w-3xl space-y-1">
+          This project demonstrates my ability to:
+        </p>
+
+        <ul className="list-disc pl-6 text-zinc-300 max-w-3xl space-y-2">
+          <li>Apply <strong>object-oriented design</strong> principles with reusable components.</li>
+          <li>Develop a <strong>state-driven architecture</strong> (Menu → Play → Game Over).</li>
+          <li>Implement <strong>real-time asset management, collision detection, and UI rendering</strong>.</li>
+        </ul>
       </header>
 
-      {/* Big hero image */}
-      <div className="mt-8 relative h-80 w-full overflow-hidden rounded-2xl border border-white/10">
-        <Image src="/capabilities/hovermap.jpg" alt="Hovermap Robot" fill className="object-cover" priority />
-      </div>
 
       {/* Two-column content */}
       <section className="mt-12 grid gap-8 md:grid-cols-2 items-start">
         <article className="space-y-4 text-zinc-300 leading-relaxed">
           <h2 className="text-2xl font-semibold">Overview</h2>
-          <p>
-            Describe the problem, constraints, and your role. Add diagrams or photos below. You can
-            totally change this layout per page—this is just a starter.
-          </p>
-          <p>
-            Call out challenges, trade-offs, reliability, test results, and what you’d do next.
+          <p className="text-zinc-300 max-w-3xl mt-3">
+            <strong>Sole Collector</strong> reimagines the classic <em>Gold Miner</em> concept with a 
+            sneaker-inspired interface created specifically for my Advanced C++ professor, Prof. Dave, who is an 
+            avid shoe enthusiast. This design choice connected the technical challenge of building the 
+            game with a theme that was both personal and engaging for the intended audience. 
           </p>
         </article>
 
-        <aside className="rounded-2xl border border-white/10 bg-white/[0.02] p-4">
-          <h3 className="text-lg font-medium">Specs / Stack</h3>
+        <aside className="rounded-2xl border border-white/10 bg-white/[0.02] p-8">
+          <h3 className="text-lg font-medium">Made With</h3>
           <ul className="mt-2 list-disc list-inside text-sm text-zinc-300 space-y-1">
-            <li>Mapping sensors</li>
-            <li>Sealed electronics</li>
-            <li>Telemetry & logging</li>
+            <li>Clion </li>
+            <li>C++ Program</li>
+            <li>Sfml 2.6.1</li>
+            <li>GUI Component, Custom Graphic</li>
           </ul>
-
-          {/* Links */}
-          <div className="mt-4 flex flex-wrap gap-2">
-            <a href="#" className="rounded-md border border-white/15 px-3 py-1 text-xs hover:bg-white/10">GitHub</a>
-            <a href="#" className="rounded-md border border-white/15 px-3 py-1 text-xs hover:bg-white/10">Docs</a>
-          </div>
         </aside>
       </section>
 
+    {/* ✅ Block 1 — image LEFT, text RIGHT */}
+    <div className="mt-12">
+        <DetailSection
+          title="Main Menu Interface"
+          imgSrc="/solecollector/main.jpg"
+          imgAlt="Main Menu Interface"
+          imgClassName="object-[50%_50%] -mt-0.6"
+          mediaAspectClass="aspect-[3/2.1]" 
+          copy={
+                 <>
+                    <p>
+                      The main menu lets players jump in with <strong>Start</strong>. 
+                      Behind the scenes, it smoothly transitions between states while 
+                      preloading textures so the gameplay feels seamless.
+                    </p>
+                  </>
+                }
+          />
+    </div>
+      
+    {/* ✅ Block 2 — image RIGHT, text LEFT */}
+      <div className="mt-8">
+      <DetailSection
+      reverse
+      title="Game Play"
+      imgSrc="/solecollector/game.jpg"
+      imgAlt="GamePlay"
+      imgClassName="object-[50%_50%]"
+      mediaAspectClass="aspect-[4/3]"  
+      copy={
+            <>
+              <p className="mb-2">
+                Developed core mechanics focused on timing, scoring, and resource management:
+              </p>
+
+              <p className="font-semibold">Controls:</p>
+              <ul className="list-disc pl-6 mb-3">
+                <li><kbd>Space</kbd> / <kbd>Enter</kbd> — drop hook</li>
+                <li><kbd>Esc</kbd> — exit the game</li>
+              </ul>
+
+              <p className="font-semibold">Mechanics:</p>
+              <ul className="list-disc pl-6">
+                <li>Objects have different values and can be set differently.</li>
+                <li>Target scores scale with level progression.</li>
+              </ul>
+            </>
+      }
+      />
+    </div>
+
+{/* ✅ Block 3 — image LEFT, text RIGHT */}
+    <div className="mt-12">
+        <DetailSection
+          title="Game Over"
+          imgSrc="/solecollector/gameover.jpg"
+          imgAlt="GameOver"
+          imgClassName="object-[50%_50%] -mt-0.6"
+          mediaAspectClass="aspect-[3/2]" 
+          copy={
+                 <>
+                    <p>
+                      At the end of each round, a results screen displays the final score, and quick restart or exit options.
+                      Restart and menu navigation were designed for low friction replayability to encourage engagement.
+                    </p>
+                  </>
+                }
+          />
+    </div>
+
       {/* Optional video */}
       <section className="mt-12">
-        <h2 className="text-2xl font-semibold mb-3">Demo</h2>
+        <h2 className="text-2xl font-semibold mb-3">Interface</h2>
         <div className="aspect-video overflow-hidden rounded-xl border border-white/10">
           {/* Replace with your real video URL */}
           <iframe
             className="h-full w-full"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Demo"
+            src="https://www.youtube.com/embed/0hr6EG-51m4"
+            title="Interface"
             allowFullScreen
           />
         </div>
       </section>
 
-      {/* Optional gallery */}
+      {/* Optional video */}
       <section className="mt-12">
-        <h2 className="text-2xl font-semibold mb-3">Gallery</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
-          {["hovermap-1.jpg", "hovermap-2.jpg"].map((f) => (
-            <div key={f} className="relative h-52 w-full overflow-hidden rounded-xl border border-white/10">
-              <Image src={`/capabilities/${f}`} alt="" fill className="object-cover" />
-            </div>
-          ))}
+        <h2 className="text-2xl font-semibold mb-3">Game Play</h2>
+        <div className="aspect-video overflow-hidden rounded-xl border border-white/10">
+          {/* Replace with your real video URL */}
+          <iframe
+            className="h-full w-full"
+            src="https://www.youtube.com/embed/ZwD3-uwR4Dk"
+            title="Game Play"
+            allowFullScreen
+          />
         </div>
       </section>
     </main>
