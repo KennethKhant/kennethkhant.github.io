@@ -81,7 +81,7 @@ export const capabilities: Capability[] = [
     objectPosition: "center 30%",
   },
   {
-    title: "Music By ME",
+    title: "NoStream",
     slug: "musicByMe",
     img: "/placeholder/musicappmain.jpg",
     copy:
