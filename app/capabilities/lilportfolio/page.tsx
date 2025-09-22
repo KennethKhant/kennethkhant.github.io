@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function HovermapRobotPage() {
+export default function LilPortfolioPage() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-16">
       <div className="mb-6 flex items-center justify-between">
@@ -16,71 +16,103 @@ export default function HovermapRobotPage() {
 
       {/* Title & subhead */}
       <header className="space-y-3">
-        <h1 className="text-4xl font-bold tracking-tight">Hovermap Robot</h1>
+        <h1 className="text-4xl font-bold tracking-tight">Little Portfolio</h1>
         <p className="text-zinc-300 max-w-3xl">
-          Compact inspection platform for confined spaces; multi-sensor mapping workflow.
+          Little Portfolio was my first C++/SFML portfolio with a menu-driven launcher that bundles all of my early SFML
+        projects into one polished desktop experience. This project drag me into the deeper understanding of C++ sfml program as well as launched my coding journey.
         </p>
       </header>
 
-      {/* Big hero image */}
-      <div className="mt-8 relative h-80 w-full overflow-hidden rounded-2xl border border-white/10">
-        <Image src="/capabilities/hovermap.jpg" alt="Hovermap Robot" fill className="object-cover" priority />
-      </div>
+      {/* Two images side-by-side*/}
+              <section className="mt-16">      
+              <div className="grid gap-3 md:grid-cols-2">
+                  {/* Left image */}
+                  <div className="relative w-full overflow-hidden rounded-none border border-white/10 bg-white/[0.02] aspect-[16/13]">
+                  <Image
+                      src="/firstportfolio/mainmenu.jpg"   
+                      alt="Project photo 1"
+                      fill
+                      className="object-cover object-[50%_50%]"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  </div>
+      
+                  {/* Right image */}
+                  <div className="relative w-full overflow-hidden rounded-none border border-white/10 bg-white/[0.02] aspect-[16/13]">
+                  <Image
+                      src="/firstportfolio/inside.jpg"   
+                      alt="Project photo 2"
+                      fill
+                      className="object-cover object-[50%_50%]"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  </div>
+              </div>
+      </section>
 
       {/* Two-column content */}
       <section className="mt-12 grid gap-8 md:grid-cols-2 items-start">
         <article className="space-y-4 text-zinc-300 leading-relaxed">
-          <h2 className="text-2xl font-semibold">Overview</h2>
-          <p>
-            Describe the problem, constraints, and your role. Add diagrams or photos below. You can
-            totally change this layout per page—this is just a starter.
-          </p>
-          <p>
-            Call out challenges, trade-offs, reliability, test results, and what you’d do next.
-          </p>
+         <p className="text-zinc-300 max-w-3xl mt-3">
+          <strong>Little Portfolio</strong> combines the SFML exercises I completed while learning
+          modern C++ into a single application. It starts with simple render/input tests and builds
+          up to animation, basic physics, and a small game prototype.
+        </p>
+
+        <ul className="text-zinc-300 max-w-3xl mt-3 list-disc pl-6 space-y-1">
+          <li><strong>Green Ball</strong> — first SFML test: window loop, draw calls, input events.</li>
+          <li><strong>2D Grid</strong> — scalable grid generator (grow/shrink) exploring transforms and layout.</li>
+          <li><strong>Phaser</strong> — sprite-sheet animation with directional walking and frame timing.</li>
+          <li><strong>Bouncing Ball</strong> — simple physics: delta-time motion, collisions, restitution.</li>
+          <li><strong>Poker</strong> — hand classification & scoring (combinatorics, ranking logic).</li>
+          <li><strong>Sole Collector (Gold Miner)</strong> — mini arcade prototype built on the above systems.</li>
+        </ul>
         </article>
 
-        <aside className="rounded-2xl border border-white/10 bg-white/[0.02] p-4">
-          <h3 className="text-lg font-medium">Specs / Stack</h3>
+        <aside className="rounded-2xl border border-white/10 bg-white/[0.02] p-8">
+          <h3 className="text-lg font-medium">Made With</h3>
           <ul className="mt-2 list-disc list-inside text-sm text-zinc-300 space-y-1">
-            <li>Mapping sensors</li>
-            <li>Sealed electronics</li>
-            <li>Telemetry & logging</li>
+            <li>Clion, VS code </li>
+            <li>C++ Program</li>
+            <li>Sfml 2.6.1</li>
+            <li>GUI Component, Custom Graphic</li>
           </ul>
-
-          {/* Links */}
-          <div className="mt-4 flex flex-wrap gap-2">
-            <a href="#" className="rounded-md border border-white/15 px-3 py-1 text-xs hover:bg-white/10">GitHub</a>
-            <a href="#" className="rounded-md border border-white/15 px-3 py-1 text-xs hover:bg-white/10">Docs</a>
-          </div>
         </aside>
       </section>
 
-      {/* Optional video */}
-      <section className="mt-12">
-        <h2 className="text-2xl font-semibold mb-3">Demo</h2>
-        <div className="aspect-video overflow-hidden rounded-xl border border-white/10">
-          {/* Replace with your real video URL */}
-          <iframe
-            className="h-full w-full"
-            src="https://www.youtube.com/embed/oJrHXgR5Xs8"
-            title="Demo"
-            allowFullScreen
-          />
-        </div>
-      </section>
+      {/* Demos: two videos side-by-side */}
+<section className="mt-12">
+  <h2 className="text-2xl font-semibold mb-3">Demos</h2>
 
-      {/* Optional gallery */}
-      <section className="mt-12">
-        <h2 className="text-2xl font-semibold mb-3">Gallery</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
-          {["hovermap-1.jpg", "hovermap-2.jpg"].map((f) => (
-            <div key={f} className="relative h-52 w-full overflow-hidden rounded-xl border border-white/10">
-              <Image src={`/capabilities/${f}`} alt="" fill className="object-cover" />
-            </div>
-          ))}
-        </div>
-      </section>
+  <div className="grid gap-4 md:gap-6 sm:grid-cols-1 md:grid-cols-2">
+    {/* Video 1 */}
+    <figure className="aspect-video overflow-hidden rounded-none border border-white/10">
+      <iframe
+        className="h-full w-full"
+        src="https://www.youtube-nocookie.com/embed/f7-7Wc37f0w"
+        title="Gameplay Demo"
+        loading="lazy"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    </figure>
+
+    {/* Video 2 */}
+    <figure className="aspect-video overflow-hidden rounded-none border border-white/10">
+      <iframe
+        className="h-full w-full"
+        src="https://www.youtube-nocookie.com/embed/zKw-OA92M2I"
+        title="Menu & UI Demo"
+        loading="lazy"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    </figure>
+  </div>
+</section>
+
     </main>
   );
 }

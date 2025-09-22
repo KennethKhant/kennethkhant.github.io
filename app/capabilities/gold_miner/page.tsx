@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import DetailSection from "../../components/DetailSection";
 
@@ -20,7 +19,7 @@ export default function SoleCollectorPage() {
         
         <p className="text-zinc-300 max-w-6xl space-y-1">
           <strong>Sole Collector</strong> is an interactive desktop game developed in 
-          <strong> C++</strong> with <strong>SFML</strong> as part of my Advanced C++ coursework. 
+          <strong> C++</strong> with <strong>SFML</strong> as part of my C++ coursework. 
           Inspired by the classic <em>Gold Miner</em> mechanic, the game challenges players to 
           reach a target score within a time limit by collecting high-value objects while avoiding obstacles.
         </p>
@@ -43,7 +42,7 @@ export default function SoleCollectorPage() {
           <h2 className="text-2xl font-semibold">Overview</h2>
           <p className="text-zinc-300 max-w-3xl mt-3">
             <strong>Sole Collector</strong> reimagines the classic <em>Gold Miner</em> concept with a 
-            sneaker-inspired interface created specifically for my Advanced C++ professor, Prof. Dave, who is an 
+            sneaker-inspired interface created specifically for my C++ professor, Prof. Dave, who is an 
             avid shoe enthusiast. This design choice connected the technical challenge of building the 
             game with a theme that was both personal and engaging for the intended audience. 
           </p>

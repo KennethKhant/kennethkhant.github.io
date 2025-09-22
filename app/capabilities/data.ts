@@ -67,7 +67,7 @@ export const capabilities: Capability[] = [
     slug: "lilportfolio",
     img: "/placeholder/mainmenu.jpg",
     copy:
-      "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
+      "Little Portfolio was my first C++/SFML portfolio with a menu-driven launcher that bundles all of my early SFML projects into one polished desktop experience. This project drag me into the deeper understanding of C++ sfml program as well as launched my coding journey.",
     tags: ["Control", "Embedded"],
     objectPosition: "center 20%",
   },
@@ -85,7 +85,7 @@ export const capabilities: Capability[] = [
     slug: "musicByMe",
     img: "/placeholder/musicappmain.jpg",
     copy:
-      "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
+      "NoStream is an offline-only music player made with C++ and SFML by using different GUI libraries components for local libraries playlists, search, and a clean, keyboard-friendly UI with offline playlist.",
     tags: ["Control", "Embedded"],
     objectPosition: "center 50%",
   },
