@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <main className="mx-auto max-w-7xl px-6 pb-24">
       {/* ================= HERO SECTION ================= */}
-      <section className="relative overflow-hidden rounded-3xl border border-white/10 mt-8 pl-10 min-h-[400px] md:min-h-[500px]">
+      <section className="relative overflow-hidden rounded-3xl border border-white/10 mt-8 pl-10 min-h-[280px] md:min-h-[360px]">
 
         {/* Background image */}
         <Image
@@ -32,60 +32,47 @@ export default function HomePage() {
           />
           */
         }
+{/* Content */}
+<div className="relative px-8 py-12 md:py-16">
+  {/* Top row: avatar + name/school */}
+  <div className="flex items-center gap-4">
+    <Image
+      src="/profile.jpg"
+      alt="Kaung Khant"
+      width={110}
+      height={110}
+      className="rounded-full ring-1 ring-white/20"
+    />
+    <div className="flex flex-col">
+      <span className="text-2xl font-semibold text-white">
+        Kaung K. Khant (Ken)
+      </span>
+      <span className="text-lg text-zinc-200">
+        University of California San Diego (UCSD)
+      </span>
+    </div>
+  </div>
 
-        {/* Content */}
-        <div className="relative px-8 py-20 md:py-28">
-          <div className="flex items-center gap-4">
-            {/* Profile picture */}
-            <Image
-              src="/profile.jpg"
-              alt="Kaung Khant"
-              width={110}
-              height={110}
-              className="rounded-full ring-1 ring-white/20"
-            />
+  {/* Headline */}
+  <h1 className="mt-4 text-2xl md:text-2xl font-semibold tracking-tight text-white">
+    Electrical Engineering · Circuit &amp; System Design · Embedded · Robotics
+  </h1>
 
-            {/* Name + tagline stacked */}
-            <div className="flex flex-col">
-              <span className="text-2xl font-semibold text-white">
-                Kaung K. Khant (Ken)
-              </span>
-              <span className="text-lg text-zinc-200">
-                University of California San Diego (UCSD)
-              </span>
-            </div>
-          </div>
+  {/* Motto — punchy but lighter hierarchy */}
+  <p className="mt-2 text-sm md:text-base text-zinc-200/90 italic">
+    “Engineering with curiosity, building with purpose.”
+  </p>
 
-          {/* Headline */}
-          <h1 className="mt-4 text-xl md:text-3xl font-semibold tracking-tight leading-tight text-white">
-            Electrical Engineering • Circuit & System Design • Embedded • Robotics
-          </h1>
-
-          {/* Description */}
-          <p className="mt-4 max-w-2xl text-zinc-200">
-              Motivated and detail-oriented Electrical Engineering with hand-on experience in circuit design, PCB design, power system analysis, and troubleshooting. Proficient in EasyEDA, KiCAD, SolidWork, C++ and C programming. Passionate about leveraging strong analytical and problem-solving skills to contribute to innovative engineering solutions.
-          </p>
-
-          
-          {/* Buttons */}
-          {/*<div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/projects"
-              className="rounded-xl border border-white/15 bg-white/5 px-5 py-2 text-sm font-medium text-white hover:bg-white/10"
-            >
-              View Projects
-            </Link>
-            <a
-              href="#contact"
-              className="rounded-xl border border-white/15 px-5 py-2 text-sm font-medium text-white hover:bg-white/10"
-            >
-              Contact
-            </a>
-            </div>
-            */
-          }
-        
-        </div>
+  {/* Summary */}
+  <p className="mt-4 max-w-3xl text-zinc-300 leading-relaxed">
+    Motivated and detail-oriented Electrical Engineering student with hands-on
+    experience in circuit design, PCB design, power system analysis, and troubleshooting.
+    Proficient in EasyEDA, KiCad, SolidWorks, and programming in C/C++. Experienced in
+    applying these skills through team-based projects in robotics and embedded systems.
+    Passionate about leveraging strong analytical and problem-solving abilities to
+    develop innovative and reliable engineering solutions.
+  </p>
+</div>
 
       </section>
 
@@ -98,7 +85,7 @@ export default function HomePage() {
           Expertise
         </h3>
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {/* 👇 Change your skills list here */}
+          {/* Change your skills list here */}
           {[
             { k: "Electronics", v: "PCB • Arduino • Raspberry Pi • Circuit Analysis • Transistor • Op-Amp • Diodes • Motor/Driver" },
             { k: "Design", v: "PCB Design • KiCad • EasyEDA • AutoCAD • Onshape • SolidWork • Canva"},
@@ -117,13 +104,13 @@ export default function HomePage() {
       </section>
 
   {/* ================= SELECTED WORK ================= */}
-      <section className="mt-14">
-        <div className="flex items-end justify-between">
-          <h2 className="text-xl md:text-2xl font-semibold">Capabilities</h2>
+    <section className="mt-14">
+      <div className="flex items-end justify-between">
+        <h2 className="text-xl md:text-2xl font-semibold">Capabilities</h2>
           <Link href="/capabilities" className="text-m text-zinc-400 hover:text-zinc-200">
               See all →
           </Link>
-        </div>
+      </div>
 
   {/* Project List*/}
   <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
