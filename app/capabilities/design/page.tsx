@@ -1,6 +1,6 @@
-// app/capabilities/hovermap-robot/page.tsx
 import Image from "next/image";
 import Link from "next/link";
+import SwipeFrame from "../../components/SwipeFrame";
 
 export default function HovermapRobotPage() {
   return (
@@ -16,71 +16,115 @@ export default function HovermapRobotPage() {
 
       {/* Title & subhead */}
       <header className="space-y-3">
-        <h1 className="text-4xl font-bold tracking-tight">Hovermap Robot</h1>
-        <p className="text-zinc-300 max-w-3xl">
-          Compact inspection platform for confined spaces; multi-sensor mapping workflow.
+        <h1 className="text-4xl font-bold tracking-tight">Graphic Design Portfolio</h1>
+        <p className="text-zinc-300 max-w-5xl">
+          This portfolio highlights selected works that explore the intersection of design, function, and sustainability. Each project demonstrates not only visual creativity but also problem-solving through design thinking.       
         </p>
       </header>
 
-      {/* Big hero image */}
-      <div className="mt-8 relative h-80 w-full overflow-hidden rounded-2xl border border-white/10">
-        <Image src="/capabilities/hovermap.jpg" alt="Hovermap Robot" fill className="object-cover" priority />
+      {/* Full-width explanation */}
+      <section className="mt-8">
+        <h2 className="text-2xl font-semibold mb-3">Product Design & Analysis</h2>
+            <ul className="text-zinc-300 max-5xl mt-3 pl-0 space-y-1">
+              <li>My product design work focuses on reimagining everyday objects with a sustainable and user-centered approach. From concept sketches to final prototypes, I aim to create designs that are both functional and environmentally conscious. The EcoSwab packaging project, for example, rethinks disposable hygiene products by integrating eco-friendly materials and modern aesthetics while improving usability.</li>
+            </ul>
+      </section>
+
+      {/* Swipe Frame (5 images) */}
+      <section className="mt-8">
+        <SwipeFrame
+          images={[
+            { src: "/design_analysis/productdesign3.jpg", alt: "Design 1" },
+            { src: "/design_analysis/productdesign4.jpg", alt: "Design 2" },
+            { src: "/design_analysis/productdesign5.jpg", alt: "Design 3" },
+            { src: "/design_analysis/productdesign1.jpg", alt: "Design 4" },
+            { src: "/design_analysis/productdesign2.jpg", alt: "Design 5" },
+          ]}
+          aspect="aspect-[3/2]"     // pick the ratio that matches your photos (e.g., aspect-video, aspect-[4/3], etc.)
+          fit="contain"             // "contain" shows full images; switch to "cover" for edge-to-edge (may crop)
+          className="border-white/10"
+        />
+      </section>
+
+      {/* Swipe Frame (11 images) */}
+      <section className="mt-8">
+        <SwipeFrame
+          images={[
+            { src: "/design_analysis/productdesign/pen1.jpg", alt: "Product Design 1" },
+            { src: "/design_analysis/productdesign/pen2.jpg", alt: "Product Design 2" },
+            { src: "/design_analysis/productdesign/pen3.jpg", alt: "Product Design 3" },
+            { src: "/design_analysis/productdesign/pen4.jpg", alt: "Product Design 4" },
+            { src: "/design_analysis/productdesign/pen5.jpg", alt: "Product Design 5" },
+            { src: "/design_analysis/productdesign/pen6.jpg", alt: "Product Design 6" },
+            { src: "/design_analysis/productdesign/pen7.jpg", alt: "Product Design 7" },
+            { src: "/design_analysis/productdesign/pen8.jpg", alt: "Product Design 8" },
+            { src: "/design_analysis/productdesign/pen9.jpg", alt: "Product Design 9" },
+            { src: "/design_analysis/productdesign/pen10.jpg", alt: "Product Design 10" },
+            { src: "/design_analysis/productdesign/pen11.jpg", alt: "Product Design 11" },
+          ]}
+          aspect="aspect-[3/2]"     // pick the ratio that matches your photos (e.g., aspect-video, aspect-[4/3], etc.)
+          fit="contain"             // "contain" shows full images; switch to "cover" for edge-to-edge (may crop)
+          className="border-white/10"
+        />
+      </section>
+
+            {/* Swipe Frame (3 images) */}
+      <section className="mt-8">
+        <SwipeFrame
+          images={[
+            { src: "/design_analysis/productdesign/pen12.jpg", alt: "Product Design 12" },
+            { src: "/design_analysis/productdesign/pen13.jpg", alt: "Product Design 13" },
+            { src: "/design_analysis/productdesign/pen14.jpg", alt: "Product Design 14" },
+          ]}
+          aspect="aspect-[3/2]"     // pick the ratio that matches your photos (e.g., aspect-video, aspect-[4/3], etc.)
+          fit="contain"             // "contain" shows full images; switch to "cover" for edge-to-edge (may crop)
+          className="border-white/10"
+        />
+      </section>
+
+      {/* Full-width explanation */}
+      <section className="mt-8">
+        <h2 className="text-2xl font-semibold mb-3">Flyer Design</h2>
+            <ul className="text-zinc-300 max-w-5xl mt-3 pl-0 space-y-2">
+              <li>This section showcases a series of flyers created for campus events and student engagement for Pasadena City College International Student Center. Each design balances clarity of information with visual appeal, using bright colors, playful illustrations, and structured layouts to catch attention while staying easy to read</li>
+            </ul>
+      </section>
+
+      {/* Big hero image 1*/}
+      <div className="mt-8">
+        <Image
+          src="/design_portfolio/flyerdesign1.jpg"
+          alt="Flyer design1"
+          width={1440}           
+          height={960}           
+          className="block max-w-full h-auto rounded-none border border-black mx-auto"
+          priority
+        />
       </div>
 
-      {/* Two-column content */}
-      <section className="mt-12 grid gap-8 md:grid-cols-2 items-start">
-        <article className="space-y-4 text-zinc-300 leading-relaxed">
-          <h2 className="text-2xl font-semibold">Overview</h2>
-          <p>
-            Describe the problem, constraints, and your role. Add diagrams or photos below. You can
-            totally change this layout per page—this is just a starter.
-          </p>
-          <p>
-            Call out challenges, trade-offs, reliability, test results, and what you’d do next.
-          </p>
-        </article>
+      {/* Big hero image 2*/}
+      <div className="mt-8">
+        <Image
+          src="/design_portfolio/flyerdesign2.jpg"
+          alt="Flyer design2"
+          width={1440}           
+          height={960}           
+          className="block max-w-full h-auto rounded-none border border-black mx-auto"
+          priority
+        />
+      </div>
 
-        <aside className="rounded-2xl border border-white/10 bg-white/[0.02] p-4">
-          <h3 className="text-lg font-medium">Specs / Stack</h3>
-          <ul className="mt-2 list-disc list-inside text-sm text-zinc-300 space-y-1">
-            <li>Mapping sensors</li>
-            <li>Sealed electronics</li>
-            <li>Telemetry & logging</li>
-          </ul>
-
-          {/* Links */}
-          <div className="mt-4 flex flex-wrap gap-2">
-            <a href="#" className="rounded-md border border-white/15 px-3 py-1 text-xs hover:bg-white/10">GitHub</a>
-            <a href="#" className="rounded-md border border-white/15 px-3 py-1 text-xs hover:bg-white/10">Docs</a>
-          </div>
-        </aside>
-      </section>
-
-      {/* Optional video */}
-      <section className="mt-12">
-        <h2 className="text-2xl font-semibold mb-3">Demo</h2>
-        <div className="aspect-video overflow-hidden rounded-xl border border-white/10">
-          {/* Replace with your real video URL */}
-          <iframe
-            className="h-full w-full"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Demo"
-            allowFullScreen
-          />
-        </div>
-      </section>
-
-      {/* Optional gallery */}
-      <section className="mt-12">
-        <h2 className="text-2xl font-semibold mb-3">Gallery</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
-          {["hovermap-1.jpg", "hovermap-2.jpg"].map((f) => (
-            <div key={f} className="relative h-52 w-full overflow-hidden rounded-xl border border-white/10">
-              <Image src={`/capabilities/${f}`} alt="" fill className="object-cover" />
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Big hero image 3*/}
+      <div className="mt-8">
+        <Image
+          src="/design_portfolio/flyerdesign3.jpg"
+          alt="Flyer design3"
+          width={1440}           
+          height={960}           
+          className="block max-w-full h-auto rounded-none border border-black mx-auto"
+          priority
+        />
+      </div>
     </main>
   );
 }

@@ -9,7 +9,7 @@ export default function HomePage() {
 
         {/* Background image */}
         <Image
-          src="/background.jpg"   // 👈 put your background image in /public and name it hero-bg.jpg
+          src="/background.jpg"   
           alt="Background"
           fill
           className="object-cover object-[50%_30%]"
@@ -63,7 +63,7 @@ export default function HomePage() {
 
           {/* Description */}
           <p className="mt-4 max-w-2xl text-zinc-200">
-            I design and integrate electronics, control loops, and software into end-to-end robotic platforms.
+              Motivated and detail-oriented Electrical Engineering with hand-on experience in circuit design, PCB design, power system analysis, and troubleshooting. Proficient in EasyEDA, KiCAD, SolidWork, C++ and C programming. Passionate about leveraging strong analytical and problem-solving skills to contribute to innovative engineering solutions.
           </p>
 
           
@@ -121,12 +121,12 @@ export default function HomePage() {
         <div className="flex items-end justify-between">
           <h2 className="text-xl md:text-2xl font-semibold">Capabilities</h2>
           <Link href="/capabilities" className="text-m text-zinc-400 hover:text-zinc-200">
-      See all →
-  </Link>
+              See all →
+          </Link>
         </div>
 
-        {/* Project List*/}
-<div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+  {/* Project List*/}
+  <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
   {[
     {
       title: "Hovermap Robot",
@@ -134,17 +134,23 @@ export default function HomePage() {
       copy: "Compact inspection robot designed to navigate confined spaces like culverts and bridges, using cameras and sensors to map environments safely and efficiently.",
       href: "/capabilities/hovermap-robot",   
     },
-    {
+    /*{
       title: "Aether-Morpheus System",
       img: "/placeholder/NASA_cover.jpg",
       copy: "Two systems that enhance astronaut safety during post-EVA operations by combining environmental monitoring and health assessment capabilities.",
       href: "/capabilities/aether-morpheus",  
-    },
+    },*/
     {
       title: "PID Line Follower",
       img: "/placeholder/coverpid.jpg",
       copy: "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
       href: "/capabilities/pid-line-follower", 
+    },
+    {
+      title: "Little Minion",
+      img: "/placeholder/speaker.jpg",
+      copy: "Lil Minion is a simple audio amplifier built around the LM386 chip, designed to boost small input signals and drive an 8Ω speaker with clear output.",
+      href: "/capabilities/speaker", 
     },
   ].map((p) => (
     <Link

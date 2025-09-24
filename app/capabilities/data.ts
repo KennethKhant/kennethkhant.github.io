@@ -11,20 +11,20 @@ export const capabilities: Capability[] = [
   {
     title: "Hovermap Robot",
     slug: "hovermap-robot",
-    img: "/placeholder/hovermap_robot.jpg",
+    img: "/placeholder/Hovermap_cover.jpg",
     copy:
       "Compact inspection robot designed to navigate confined spaces like culverts and bridges, using cameras and sensors to map environments safely and efficiently.",
-    tags: ["Mapping", "Robotics"],
+    tags: ["Mechanical","Electrical","Research","System & Control", "Robotics"],
     objectPosition: "center 50%",
   },
   {
     title: "Aether-Morpheus System",
     slug: "aether-morpheus",
-    img: "/placeholder/nasa_mind.jpg",
+    img: "/placeholder/NASA_cover.jpg",
     copy:
-      "Two systems that enhance astronaut safety during post-EVA operations by combining environmental monitoring and health assessment capabilities.",
-    tags: ["Post-EVA", "Safety"],
-    objectPosition: "center 50%",
+      "Dual-system safety and health assistant designed for astronauts for the NASA MINDS Challenge returning from EVAs, combining Aether for environmental monitoring and Morpheus for post-EVA health assessment.",
+    tags: ["Mechanical", "Electrical","Research"],
+    objectPosition: "center 45%",
   },
   {
     title: "PID Line Follower",
@@ -32,7 +32,7 @@ export const capabilities: Capability[] = [
     img: "/linefollow/win.jpg",
     copy:
       "A line-following robot using a PID controller for smooth, stable tracking at speed. It continuously adjusts motor speeds based on sensor feedback to reduce overshoot and oscillation.",
-    tags: ["Control", "Embedded"],
+    tags: ["Mechanical", "Electrical","Research", "Control", "Embedded", "PCB"],
     objectPosition: "center 50%",
   },
   {
@@ -41,7 +41,7 @@ export const capabilities: Capability[] = [
     img: "/placeholder/speaker.jpg",
     copy:
       "Lil Minion is a simple audio amplifier built around the LM386 chip, designed to boost small input signals and drive an 8Ω speaker with clear output. The name \"Lil Minion\" comes from the playful inspiration of the Minion character, reflecting both its compact size and the fun, approachable nature of the build.",
-    tags: ["Control", "Embedded"],
+    tags: ["Mechanical", "Electrical", "Design", "PCB"],
     objectPosition: "center 50%",
   },
   {
@@ -50,7 +50,7 @@ export const capabilities: Capability[] = [
     img: "/tritonrobotic/mainrobot.jpg",
     copy:
       "Triton Robotics is a student-led engineering team at UC San Diego that competes in the international RoboMaster robotics competition.",
-    tags: ["Control", "Embedded"],
+    tags: ["Electrical", "Design", "PCB", "Embedded"],
     objectPosition: "center 25%",
   },
   {
@@ -59,7 +59,7 @@ export const capabilities: Capability[] = [
     img: "/placeholder/coinflippro.jpg",
     copy:
       "An electronic coin-flipping circuit built on a custom PCB. Using a push-button, LEDs, and basic logic components, the board randomly lights up either 'Heads' or 'Tails' to simulate the toss of a coin.",
-    tags: ["Control", "Embedded"],
+    tags: ["Electrical", "PCB", "Design"],
     objectPosition: "center 65%",
   },
   {
@@ -68,7 +68,7 @@ export const capabilities: Capability[] = [
     img: "/placeholder/mainmenu.jpg",
     copy:
       "Little Portfolio was my first C++/SFML portfolio with a menu-driven launcher that bundles all of my early SFML projects into one polished desktop experience. This project drag me into the deeper understanding of C++ sfml program as well as launched my coding journey.",
-    tags: ["Control", "Embedded"],
+    tags: ["Programming", "C++", "SFML", "Design"],
     objectPosition: "center 20%",
   },
   {
@@ -77,7 +77,7 @@ export const capabilities: Capability[] = [
     img: "/placeholder/solecollectormain.jpg",
     copy:
       "Sole Collector is an interactive desktop game developed in C++ with SFML as part of my Advanced C++ coursework.",
-    tags: ["Control", "Embedded"],
+    tags: ["Programming", "C++", "SFML", "Design"],
     objectPosition: "center 30%",
   },
   {
@@ -86,16 +86,16 @@ export const capabilities: Capability[] = [
     img: "/placeholder/musicappmain.jpg",
     copy:
       "NoStream is an offline-only music player made with C++ and SFML by using different GUI libraries components for local libraries playlists, search, and a clean, keyboard-friendly UI with offline playlist.",
-    tags: ["Control", "Embedded"],
+    tags: ["Programming", "C++", "SFML", "Design"],
     objectPosition: "center 50%",
   },
   {
     title: "Graphic Design",
     slug: "design",
-    img: "/placeholder/graphic.jpg",
+    img: "/placeholder/designportfolio.jpg",
     copy:
-      "Line follow robot with PID control to adjust its movements in real time, allowing it to maintain balance, follow paths, or stabilize systems with high accuracy.",
-    tags: ["Control", "Embedded"],
+      "This portfolio highlights selected works that explore the intersection of design, function, and sustainability. Each project demonstrates not only visual creativity but also problem-solving through design thinking.",
+    tags: ["UX/UI", "Product Design"],
     objectPosition: "center 50%",
   },
 
