@@ -1,9 +1,46 @@
 @import "tailwindcss";
 
-:root { color-scheme: dark; }
-html, body {
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
   background: #0b0c0f;
   color: #e5e5e5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* ✅ prevent horizontal scroll on phone */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ✅ make media scale correctly */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ✅ prevent flex/grid children from forcing overflow */
+* {
+  min-width: 0;
+}
+
+/* ✅ respect notches on iPhone, etc. */
+@supports (padding: max(0px)) {
+  :root {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+/* ✅ only apply hover effects on devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+  .hoverable:hover {
+    transform: translateY(-2px);
+  }
 }

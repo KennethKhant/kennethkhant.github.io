@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   description: "Electrical engineering, embedded systems, and robotics builds.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export default function RootLayout({
   children,
 }: {
