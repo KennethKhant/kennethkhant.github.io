@@ -138,7 +138,7 @@ export default function AboutPage() {
             that can be held, tested, and trusted in the field.
           </p>
           <p className="text-zinc-200">
-            I find energy in problem-solving—whether that’s debugging a stubborn circuit,
+            I find energy in problem-solving whether that’s debugging a stubborn circuit,
             redesigning a PCB that didn’t fit the first time, or optimizing code until it
             runs just right. Those small wins remind me why I chose this path. The moment
             when something I built powers on for the first time is what keeps me moving
@@ -146,7 +146,7 @@ export default function AboutPage() {
           </p>
           <p className="text-zinc-200">
             At the core, what drives me most is impact. I want my projects to do more
-            than just prove a concept—they should help people, spark curiosity, or
+            than just prove a concept they should help people, spark curiosity, or
             inspire others to create. Knowing that my work might make someone else’s
             problem a little easier to solve gives me the motivation to keep building,
             learning, and pushing boundaries.
@@ -157,7 +157,7 @@ export default function AboutPage() {
         {/* Right side image */}
         <div className="w-full md:w-[40%] flex justify-end">
           <Image
-            src="/aboutme/2.jpg"
+            src="/aboutme/2.JPG"
             alt="Lab bench and tools"
             width={800}   // you can tweak this
             height={500}
