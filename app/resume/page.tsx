@@ -6,8 +6,8 @@ export const metadata = {
   description: "My resume as an image with a downloadable copy.",
 };
 
-const RESUME_PDF = "/resume/kaungkhant-resume.pdf"; // keep your PDF here
-const RESUME_IMG = "/resume/myresume.png"; // your image file
+const RESUME_PDF = "/resume/resume2/resume1.pdf"; // keep your PDF here
+const RESUME_IMG = "/resume/resume2/resume1.png"; // your image file
 
 export default function ResumePage() {
   return (

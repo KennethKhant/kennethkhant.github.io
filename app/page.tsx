@@ -87,10 +87,10 @@ export default function HomePage() {
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {/* Change your skills list here */}
           {[
-            { k: "Electronics", v: "PCB • Arduino • Raspberry Pi • Circuit Analysis • Transistor • Op-Amp • Diodes • Motor/Driver" },
+            { k: "Electronics", v: "PCB • Arduino • Raspberry Pi • Circuit Analysis • Analog & Digital Circuit • Oscilloscopes • Multimeters • Logic analyzers • Transistor • Op-Amp • Diodes • Motor/Driver" },
             { k: "Design", v: "PCB Design • KiCad • EasyEDA • AutoCAD • Onshape • SolidWork • Canva"},
             { k: "Hardware", v: "Soldering Through-Hole(THT) & Surface-Mount Device(SMD) • PID Control • 3D Printing • Laser Cutting" },
-            { k: "Software", v: " Arduino • C/C++ • Python • MATLAB • Quantum Espresso • Vesta" },
+            { k: "Software", v: " Arduino • C/C++ • Python • LT Spice • PSpice • VHDL • Verilog • MATLAB • Quantum Espresso • Vesta" },
           ].map((item) => (
             <div
               key={item.k}

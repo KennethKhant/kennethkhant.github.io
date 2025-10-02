@@ -1,4 +1,4 @@
-// app/capabilities/hovermap-robot/page.tsx
+import DetailSection from "../../components/DetailSection";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -81,7 +81,7 @@ export default function LilPortfolioPage() {
       </section>
 
       {/* Demos: two videos side-by-side */}
-<section className="mt-12">
+  <section className="mt-12">
   <h2 className="text-2xl font-semibold mb-3">Demos</h2>
 
   <div className="grid gap-4 md:gap-6 sm:grid-cols-1 md:grid-cols-2">
@@ -111,7 +111,7 @@ export default function LilPortfolioPage() {
       />
     </figure>
   </div>
-</section>
+  </section>
 
     </main>
   );
