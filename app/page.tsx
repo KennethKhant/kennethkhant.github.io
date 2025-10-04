@@ -197,6 +197,14 @@ export default function HomePage() {
       </section>
          */}
 
+      {/* Mobile-only More Projects (same style as More About Me) */}
+      <Link
+        href="/capabilities"
+        className="md:hidden mt-10 block rounded-2xl border border-white/10 bg-gradient-to-r from-white/[0.04] to-transparent p-6 text-center hover:bg-white/10 transition"
+      >
+        <span className="text-sm font-semibold">More Projects</span>
+      </Link>
+
       {/* ================= ABOUT ME LINK ================= */}
       <Link
         href="/about"
