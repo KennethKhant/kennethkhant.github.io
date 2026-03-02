@@ -90,7 +90,7 @@ export default function HomePage() {
             { k: "Electronics", v: "PCB • Arduino • Raspberry Pi • Circuit Analysis • Analog & Digital Circuit • Oscilloscopes • Multimeters • Logic analyzers • Transistor • Op-Amp • Diodes • Motor/Driver" },
             { k: "Design", v: "PCB Design • KiCad • EasyEDA • AutoCAD • Onshape • SolidWork • Canva"},
             { k: "Hardware", v: "Soldering Through-Hole(THT) & Surface-Mount Device(SMD) • PID Control • 3D Printing • Laser Cutting" },
-            { k: "Software", v: " Arduino • C/C++ • Python • LT Spice • PSpice • VHDL • Verilog • MATLAB • Quantum Espresso • Vesta" },
+            { k: "Software", v: " Arduino • C/C++ • Python • Java Script • Html • LT Spice • PSpice • VHDL • Verilog • MATLAB • Quantum Espresso • Vesta" },
           ].map((item) => (
             <div
               key={item.k}
@@ -197,7 +197,7 @@ export default function HomePage() {
       </section>
          */}
 
-      {/* Mobile-only More Projects (same style as More About Me) */}
+      {/* Mobile-only More Projects */}
       <Link
         href="/capabilities"
         className="md:hidden mt-10 block rounded-2xl border border-white/10 bg-gradient-to-r from-white/[0.04] to-transparent p-6 text-center hover:bg-white/10 transition"

@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import Header from "./components/Header"; // if this alias doesn't work, use: ../../components/Header
+import Header from "./components/Header"; 
 
 export const metadata: Metadata = {
   title: "Kaung Khant — Portfolio",
