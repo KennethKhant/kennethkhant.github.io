@@ -67,7 +67,7 @@ export default function HomePage() {
   <p className="mt-4 max-w-3xl text-zinc-300 leading-relaxed">
     Motivated and detail-oriented Electrical Engineering student with hands-on
     experience in circuit design, PCB design, power system analysis, and troubleshooting.
-    Proficient in EasyEDA, KiCad, SolidWorks, and programming in C/C++. Experienced in
+    Proficient in EasyEDA, KiCad, SolidWorks, and programming in python, C/C++. Experienced in
     applying these skills through team-based projects in robotics and embedded systems.
     Passionate about leveraging strong analytical and problem-solving abilities to
     develop innovative and reliable engineering solutions.

@@ -171,7 +171,7 @@ export default function AboutPage() {
       <div className="mt-8 w-full flex justify-center">
         <Image
           src="/aboutme/4.jpg"
-          alt="Aether Robot"
+          alt="My pic"
           width={800}   // can be actual width or a max width you want
           height={750}
           unoptimized
