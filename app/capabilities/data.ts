@@ -10,7 +10,7 @@ export type Capability = {
 export const capabilities: Capability[] = [
   {
     title: "Autonomous Vehicle",
-    slug: "autonomous-vehicle",
+    slug: "RC_car",
     img: "/placeholder/autonomous_vehicle.jpg",
     copy:
       "Designed and developed an autonomous RC vehicle capable of both vision-based self-driving and GPS waypoint navigation using the DonkeyCar framework, Raspberry Pi, OAK-D Lite camera, VESC motor controller, and PID-based control systems.",

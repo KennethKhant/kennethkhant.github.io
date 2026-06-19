@@ -91,7 +91,8 @@ export default function RC_Car_Page() {
           title="Initial Design"
           imgSrc="/donkeycar/v1.jpg"
           imgAlt="Initial autonomous RC car design"
-          imgClassName="object-[50%_63%]"
+          imgClassName="object-[50%_60%]"
+          mediaAspectClass="aspect-[1/1]"
           copy={
             <>
               <p>
@@ -117,38 +118,37 @@ export default function RC_Car_Page() {
 
       {/* Three Autonomous Laps */}
       <section className="mt-16 grid gap-8 md:grid-cols-2 items-start">
+        <article className="space-y-4 text-zinc-300 leading-relaxed">
+          <h2 className="text-2xl font-semibold">Three Autonomous Laps</h2>
+          <p>
+              After completing the hardware assembly and system integration, the
+              vehicle was manually driven around the track to collect training data
+              for the autonomous driving model. Images from the OAK-D Lite camera
+              and steering commands were recorded using the DonkeyCar framework.
+              The collected dataset was then used to train a machine learning
+              model capable of predicting steering inputs based on the vehicle&apos;s
+              camera view.
+          </p>
+          <p>
+              After several rounds of training and testing, the model was deployed
+              to the vehicle, enabling it to successfully complete three
+              consecutive autonomous laps around the track without manual
+              intervention.
+          </p>
+         </article>
+
         <div className="flex justify-center">
           <div className="relative w-full max-w-sm overflow-hidden rounded-none border border-white/10">
             <iframe
               className="w-full aspect-[9/16]"
-              src="https://drive.google.com/file/d/1rduymM17vBfYWXYT4f8Io8JxETGuJLq9/view?usp=sharing"
+              src="https://drive.google.com/file/d/1rduymM17vBfYWXYT4f8Io8JxETGuJLq9/preview"
               title="Three Autonomous Laps"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               loading="lazy"
             />
           </div>
         </div>
-
-        <article className="space-y-4 text-zinc-300 leading-relaxed">
-          <h2 className="text-2xl font-semibold">Three Autonomous Laps</h2>
-          <p>
-            After completing the hardware assembly and system integration, the
-            vehicle was manually driven around the track to collect training data
-            for the autonomous driving model. Images from the OAK-D Lite camera
-            and steering commands were recorded using the DonkeyCar framework.
-            The collected dataset was then used to train a machine learning
-            model capable of predicting steering inputs based on the vehicle&apos;s
-            camera view.
-          </p>
-          <p>
-            After several rounds of training and testing, the model was deployed
-            to the vehicle, enabling it to successfully complete three
-            consecutive autonomous laps around the track without manual
-            intervention.
-          </p>
-        </article>
       </section>
 
       {/* Complete Setup & Final Design */}
@@ -158,6 +158,7 @@ export default function RC_Car_Page() {
           imgSrc="/donkeycar/v2.jpg"
           imgAlt="Final autonomous RC car design"
           imgClassName="object-[50%_68%]"
+          mediaAspectClass="aspect-[1/1]"
           copy={
             <>
               <p>
@@ -181,20 +182,6 @@ export default function RC_Car_Page() {
 
       {/* GPS Waypoint Following */}
       <section className="mt-16 grid gap-8 md:grid-cols-2 items-start">
-        <div className="flex justify-center">
-          <div className="relative w-full max-w-sm overflow-hidden rounded-none border border-white/10">
-            <iframe
-              className="w-full aspect-[9/16]"
-              src="https://drive.google.com/file/d/1lMW2JXqRYK_Nowa1HuokjOUVCdv5JcgT/view"
-              title="GPS Waypoint Following"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              loading="lazy"
-            />
-          </div>
-        </div>
-
         <article className="space-y-4 text-zinc-300 leading-relaxed">
           <h2 className="text-2xl font-semibold">GPS Waypoint Following</h2>
           <p>
@@ -214,6 +201,19 @@ export default function RC_Car_Page() {
             control.
           </p>
         </article>
+
+        <div className="flex justify-center">
+          <div className="relative w-full max-w-sm overflow-hidden rounded-none border border-white/10">
+            <iframe
+              className="w-full aspect-[9/16]"
+              src="https://drive.google.com/file/d/1lMW2JXqRYK_Nowa1HuokjOUVCdv5JcgT/preview"
+              title="GPS Waypoint Following"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              loading="lazy"
+            />
+          </div>
+        </div>
       </section>
     </main>
   );
